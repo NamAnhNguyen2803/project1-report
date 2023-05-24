@@ -2,14 +2,24 @@
 import React from 'react';
 import user1 from "./pages/user.json"
 import Usertable from "./pages/components/Usertable"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./pages/layout"
 
-var user=user1
+var user = user1;
 // var user1 = "./pages/user.json";
 
-const App = () => {
+var ID = 0;
+
+export const App = () => {
   return (
     <div>
-      <Usertable />
+        <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route path="Usertable" element={<Usertable />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
       <div className="container ">
         <div className="row ">
           <div className="mx-auto ">
@@ -17,13 +27,12 @@ const App = () => {
               <img src="./img/71e42070-d8ef-488e-b916-276e56336e003.jpg" alt="Avatar" className="rounded-circle m-4 mx-auto text-center" />
               <span className="name text-center">
 
-                <h1>{user.name}</h1>
+                <h1>{user[ID].name}</h1>
               </span>
               <span className="description text-center">
                 <p>
-                {user.title}<br></br>
-                {user.organiztion}
-
+                  {user[ID].title}<br></br>
+                  {user[ID].organization}
                 </p>
               </span>
             </div>
@@ -56,7 +65,8 @@ const App = () => {
                   <span className="btn-icon "><i className="bi bi-facebook " /></span>
                   <span className="ms-3">Social Media</span>
                 </button></div>
-            </div>
+            </div>     
+
           </div>
         </div>
       </div>
