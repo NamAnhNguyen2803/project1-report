@@ -1,24 +1,29 @@
-import User from './User'
+
 import React from 'react';
 import user1 from "./pages/user.json"
-var count = "Nam Anh dep trai";
-var user = User;
+import Usertable from "./pages/components/Usertable"
+
+var user=user1
 // var user1 = "./pages/user.json";
+
 const App = () => {
   return (
     <div>
+      <Usertable />
       <div className="container ">
         <div className="row ">
           <div className="mx-auto ">
             <div className="mx-auto text-center">
               <img src="./img/71e42070-d8ef-488e-b916-276e56336e003.jpg" alt="Avatar" className="rounded-circle m-4 mx-auto text-center" />
               <span className="name text-center">
-                <h3>{user.name}</h3>
-                <h1>{user1.name}</h1>
+
+                <h1>{user.name}</h1>
               </span>
               <span className="description text-center">
-                <p className=" "><br />
-                  Intern tại Vlaser
+                <p>
+                {user.title}<br></br>
+                {user.organiztion}
+
                 </p>
               </span>
             </div>
