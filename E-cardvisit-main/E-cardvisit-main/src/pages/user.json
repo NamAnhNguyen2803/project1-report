@@ -1,85 +1,156 @@
 [
-{
+  {
     "ID": "1",
-    "name": "Nam Anh dep trai",
-    "nick_name":"Real_G",
+    "name": "Nam Anh",
+    "nick_name": "Real_G",
     "organization": "Vlaser",
     "title": "Intern",
     "address": "Yen So, Hoang Mai , Ha Noi",
     "type": "vip_black",
-    "cover":"",
+    "cover": "",
     "image": "",
-    "email": "namanh8t@gmail.com",
-    "phone":"0367800981",
-    "user_ID":"1",
+    "phone": "0367800981",
+    "user_ID": "1",
     "design_ID": "floral",
-    "links_ID":"1"
-    } ,
-    {
-        "user_ID": "2",
-        "ID": "2",
-        "design_ID": "abstract",
-        "name": "Linh Nguyen",
-        "nick_name": "LinhN",
-        "title": "Software Engineer",
-        "address": "123 ABC Street, XYZ City",
-        "organization": "TechCo",
-        "type": "regular",
-        "cover": "",
-        "image": "",
-        "email": "linhnguyen@example.com",
-        "phone": "1234567890",
-        "links_ID": "2"
-      },
+    "links_ID": "1",
+    "social_media": [
       {
-        "user_ID": "3",
-        "ID": "3",
-        "design_ID": "geometric",
-        "name": "Trung Vu",
-        "nick_name": "TrungV",
-        "title": "Graphic Designer",
-        "address": "789 XYZ Street, PQR City",
-        "organization": "DesignCo",
-        "type": "vip_gold",
-        "cover": "",
-        "image": "",
-        "email": "trungvu@example.com",
-        "phone": "9876543210",
-        "links_ID": "3"
-      },
-      {
-        "user_ID": "4",
-        "ID": "4",
-        "design_ID": "minimal",
-        "name": "Huong Tran",
-        "nick_name": "HuongT",
-        "title": "Marketing Specialist",
-        "address": "456 CDE Street, FGH City",
-        "organization": "MarketingCo",
-        "type": "regular",
-        "cover": "",
-        "image": "",
-        "email": "huongtran@example.com",
-        "phone": "5551234567",
-        "links_ID": "4"
-      },
-      {
-        "user_ID": "5",
-        "ID": "5",
-        "design_ID": "vintage",
-        "name": "Anh Nguyen",
-        "nick_name": "AnhN",
-        "title": "Photographer",
-        "address": "789 GHI Street, JKL City",
-        "organization": "PhotographyCo",
-        "type": "vip_silver",
-        "cover": "",
-        "image": "",
-        "email": "anhnguyen@example.com",
-        "phone": "9999876543",
-        "links_ID": "5"
+        "facebook": "https://www.facebook.com/namanh2803",
+        "instagram": "https://www.instagram.com/namanh2803",
+        "twitter": "https://www.twitter.com/namanh2803",
+        "linkedin": "https://www.linkedin.com/namanh2803",
+        "email": "namanh8t@gmail.com"
       }
-      
-]
+    ]
+  },
+  {
+    "user_ID": "2",
+    "ID": "2",
+    "design_ID": "abstract",
+    "name": "Linh Nguyen",
+    "nick_name": "LinhN",
+    "title": "Software Engineer",
+    "address": "123 ABC Street, XYZ City",
+    "organization": "TechCo",
+    "type": "regular",
+    "cover": "",
+    "image": "",
+    "email": "linhnguyen@example.com",
+    "phone": "1234567890",
+    "links_ID": "2",
+    "social_media": [
+      {
+        "facebook": "https://www.facebook.com/linhnguyen",
+        "instagram": "https://www.instagram.com/linhnguyen",
+        "twitter": "https://www.twitter.com/linhnguyen",
+        "linkedin": "https://www.linkedin.com/linhnguyen"
+      }
+    ]
+  },
 
+
+  
+  {
+    "user_ID": "2",
+    "ID": "2",
+    "design_ID": "abstract",
+    "name": "Linh Nguyen",
+    "nick_name": "LinhN",
+    "title": "Software Engineer",
+    "address": "123 ABC Street, XYZ City",
+    "organization": "TechCo",
+    "type": "regular",
+    "cover": "",
+    "image": "",
+    "email": "linhnguyen@example.com",
+    "phone": "1234567890",
+    "links_ID": "2",
+    "social_media": [
+      {
+        "facebook": "https://www.facebook.com/linhnguyen",
+        "instagram": "https://www.instagram.com/linhnguyen",
+        "twitter": "https://www.twitter.com/linhnguyen",
+        "linkedin": "https://www.linkedin.com/linhnguyen"
+      }
+    ]
+  },
+  
+  
+    
+      {
+    "user_ID": "4",
+    "ID": "4",
+    "design_ID": "minimal",
+    "name": "Huong Tran",
+    "nick_name": "HuongT",
+    "title": "Marketing Specialist",
+    "address": "456 CDE Street, FGH City",
+    "organization": "MarketingCo",
+    "type": "regular",
+    "cover": "",
+    "image": "",
+    "email": "huongtran@example.com",
+    "phone": "5551234567",
+    "links_ID": "4",
+    "social_media": [
+      {
+        "facebook": "https://www.facebook.com/huongtran",
+        "instagram": "https://www.instagram.com/huongtran",
+        "twitter": "https://www.twitter.com/huongtran",
+        "linkedin": "https://www.linkedin.com/huongtran"
+      }
+    ]
+  },
+    
+    
       
+  {
+    "user_ID": "5",
+    "ID": "5",
+    "design_ID": "vintage",
+    "name": "Anh Nguyen",
+    "nick_name": "AnhN",
+    "title": "Photographer",
+    "address": "789 GHI Street, JKL City",
+    "organization": "PhotographyCo",
+    "type": "vip_silver",
+    "cover": "",
+    "image": "",
+    "email": "anhnguyen@example.com",
+    "phone": "9999876543",
+    "links_ID": "5",
+    "social_media": [
+      {
+        "facebook": "https://www.facebook.com/anhnguyen",
+        "instagram": "https://www.instagram.com/anhnguyen",
+        "twitter": "https://www.twitter.com/anhnguyen",
+        "linkedin": "https://www.linkedin.com/anhnguyen"
+      }
+    ]
+  },
+        
+    {
+    "user_ID": "7",
+    "ID": "7",
+    "design_ID": "classic",
+    "name": "Mai Trinh",
+    "nick_name": "MaiT",
+    "title": "HR Manager",
+    "address": "123 PQR Street, UVW City",
+    "organization": "HRCo",
+    "type": "regular",
+    "cover": "",
+    "image": "",
+    "email": "maitrinh@example.com",
+    "phone": "9876543210",
+    "links_ID": "7",
+    "social_media": [
+      {
+        "facebook": "https://www.facebook.com/maitrinh",
+        "instagram": "https://www.instagram.com/maitrinh",
+        "twitter": "https://www.twitter.com/maitrinh",
+        "linkedin": "https://www.linkedin.com/maitrinh"
+      }
+    ]
+  }
+]

@@ -22,7 +22,7 @@ const Layout = () => {
         </nav>
       </header>
       <main>
-        <h1>Welcome to the Layout Page</h1>
+
         <Outlet />
       </main>
     </div>

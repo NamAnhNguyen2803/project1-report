@@ -4,22 +4,32 @@ import user1 from "./pages/user.json"
 import Usertable from "./pages/components/Usertable"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/layout"
-
-var user = user1;
+var ID = 0;
+var user = user1[ID];
 // var user1 = "./pages/user.json";
 
-var ID = 0;
+
+
+const links = user.social_media.map(user_link => (
+  <li key={user_link.email} className="list-inline-item text-center">
+    <a href={user_link.facebook} className="text-white ">{user_link.facebook}</a>
+    <br />
+    <a href={user_link.instagram} className="text-white">{user_link.instagram}</a>
+    <br />
+    <a href={user_link.twitter} className="text-white">{user_link.twitter}</a>
+    <br />
+    <a href={user_link.linkedin} className="text-white">{user_link.linkedin}</a>
+    <br />
+    <a href={`mailto:${user_link.email}`} className="text-white">{user_link.email}</a>
+    <br />
+  </li>
+));
+
 
 export const App = () => {
   return (
     <div>
-        <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route path="Usertable" element={<Usertable />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+
       <div className="container ">
         <div className="row ">
           <div className="mx-auto ">
@@ -27,12 +37,13 @@ export const App = () => {
               <img src="./img/71e42070-d8ef-488e-b916-276e56336e003.jpg" alt="Avatar" className="rounded-circle m-4 mx-auto text-center" />
               <span className="name text-center">
 
-                <h1>{user[ID].name}</h1>
+                <h1>{user.name}</h1>
+
               </span>
               <span className="description text-center">
                 <p>
-                  {user[ID].title}<br></br>
-                  {user[ID].organization}
+                  {user.title}<br></br>
+                  {user.organization}
                 </p>
               </span>
             </div>
@@ -64,12 +75,16 @@ export const App = () => {
                 <button className="btn btn-outline-success m-2 d-flex w-75 mx-auto">
                   <span className="btn-icon "><i className="bi bi-facebook " /></span>
                   <span className="ms-3">Social Media</span>
-                </button></div>
-            </div>     
+                </button> <ul className="text-center">{links}</ul>
+                </div>
+
+             
+            </div>
 
           </div>
         </div>
       </div>
+
     </div>
   );
 };
