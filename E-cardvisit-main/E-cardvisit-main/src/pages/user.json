@@ -15,12 +15,21 @@
     "links_ID": "1",
     "social_media": [
       {
-        "facebook": "https://www.facebook.com/namanh2803",
-        "instagram": "https://www.instagram.com/namanh2803",
-        "twitter": "https://www.twitter.com/namanh2803",
-        "linkedin": "https://www.linkedin.com/namanh2803",
-        "email": "namanh8t@gmail.com"
-      }
+        "link": "https://www.facebook.com/namanh2803", "ID": "facebook"
+      },
+      {
+        "link": "https://www.instagram.com/namanh2803","ID": "instagram"
+      },
+      {
+        "link": "https://www.twitter.com/namanh2803","ID": "twitter"
+      },
+       {
+        "link": "https://www.linkedin.com/namanh2803","ID": "linkedin"
+       } ,
+       {
+        "link": "namanh8t@gmail.com", "ID": "email"
+       } 
+      
     ]
   },
   {
@@ -40,6 +49,7 @@
     "links_ID": "2",
     "social_media": [
       {
+        "ID": "2",
         "facebook": "https://www.facebook.com/linhnguyen",
         "instagram": "https://www.instagram.com/linhnguyen",
         "twitter": "https://www.twitter.com/linhnguyen",
@@ -47,37 +57,31 @@
       }
     ]
   },
-
-
-  
   {
-    "user_ID": "2",
-    "ID": "2",
-    "design_ID": "abstract",
-    "name": "Linh Nguyen",
-    "nick_name": "LinhN",
-    "title": "Software Engineer",
-    "address": "123 ABC Street, XYZ City",
-    "organization": "TechCo",
-    "type": "regular",
+    "user_ID": "3",
+    "ID": "3",
+    "design_ID": "vintage",
+    "name": "Anh Nguyen",
+    "nick_name": "AnhN",
+    "title": "Photographer",
+    "address": "789 GHI Street, JKL City",
+    "organization": "PhotographyCo",
+    "type": "vip_silver",
     "cover": "",
     "image": "",
-    "email": "linhnguyen@example.com",
-    "phone": "1234567890",
-    "links_ID": "2",
+    "email": "anhnguyen@example.com",
+    "phone": "9999876543",
+    "links_ID": "5",
     "social_media": [
       {
-        "facebook": "https://www.facebook.com/linhnguyen",
-        "instagram": "https://www.instagram.com/linhnguyen",
-        "twitter": "https://www.twitter.com/linhnguyen",
-        "linkedin": "https://www.linkedin.com/linhnguyen"
+        "facebook": "https://www.facebook.com/anhnguyen",
+        "instagram": "https://www.instagram.com/anhnguyen",
+        "twitter": "https://www.twitter.com/anhnguyen",
+        "linkedin": "https://www.linkedin.com/anhnguyen"
       }
     ]
   },
-  
-  
-    
-      {
+  {
     "user_ID": "4",
     "ID": "4",
     "design_ID": "minimal",
@@ -101,37 +105,9 @@
       }
     ]
   },
-    
-    
-      
   {
     "user_ID": "5",
     "ID": "5",
-    "design_ID": "vintage",
-    "name": "Anh Nguyen",
-    "nick_name": "AnhN",
-    "title": "Photographer",
-    "address": "789 GHI Street, JKL City",
-    "organization": "PhotographyCo",
-    "type": "vip_silver",
-    "cover": "",
-    "image": "",
-    "email": "anhnguyen@example.com",
-    "phone": "9999876543",
-    "links_ID": "5",
-    "social_media": [
-      {
-        "facebook": "https://www.facebook.com/anhnguyen",
-        "instagram": "https://www.instagram.com/anhnguyen",
-        "twitter": "https://www.twitter.com/anhnguyen",
-        "linkedin": "https://www.linkedin.com/anhnguyen"
-      }
-    ]
-  },
-        
-    {
-    "user_ID": "7",
-    "ID": "7",
     "design_ID": "classic",
     "name": "Mai Trinh",
     "nick_name": "MaiT",
