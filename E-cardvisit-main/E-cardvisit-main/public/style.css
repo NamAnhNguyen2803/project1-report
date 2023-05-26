@@ -43,16 +43,21 @@ p{
 
   display: contents;
   border: none;
-  color: rgb(145, 74, 163) !important;
+  color: rgb(250, 250, 250) !important;
+  size: 100px;
+
 }
 .fast-icon bi{
 
-  size: 20px;
+  size: 50px !important;
   margin: 5px;
 }
 .a{
-  color:  none !important;
+  color:  rgb(250, 250, 250) !important;
+}
 
+.bi{
+  color:rgb(250, 250, 250)
 }
 
 .col-md-4{

@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import user1 from "./pages/user.json"
 
 var ID = 0;
 var user = user1[ID];
 
 const fast_icon = user.social_media.map((links) => (
-  <div key={links.ID} className="list-inline-item justify-content-between fa-xs">
+  <div key={links.ID} className="list-inline-item justify-content-between ">
     {links.ID === "facebook" && (
       <a href={links.link}><i className="bi bi-facebook bi-3x"></i></a>
     )}
@@ -24,7 +24,59 @@ const fast_icon = user.social_media.map((links) => (
   </div>
 ));
 
+const link_button = user.social_media.map((links) => (
+  <div key={links.ID} className="mx-auto  m-2 ">
+    {links.ID === "facebook" && (
+      <a href={links.link}>
+        <button className="btn btn-outline-success d-flex w-75 mx-auto">
+          <span className="btn-icon "><i className="bi bi-facebook " /></span>
+          <span className="ms-3">Facebook</span>
+        </button>
+      </a>
+    )}
+    {links.ID === "instagram" && (
+      <a href={links.link}>
+        <button className="btn btn-outline-success  d-flex w-75 mx-auto">
+          <span className="btn-icon "><i className="bi bi-instagram " /></span>
+          <span className="ms-3">Instagram</span>
+        </button>
+      </a>
+    )}
+    {links.ID === "linkedin" && (
+      <a href={links.link}>
+        <button className="btn btn-outline-success  d-flex w-75 mx-auto">
+          <span className="btn-icon "><i className="bi bi-linkedin " /></span>
+          <span className="ms-3">Linked-in</span>
+        </button>
+      </a>
+    )}
+    {links.ID === "twitter" && (
+      <a href={links.link}>
+        <button className="btn btn-outline-success  d-flex w-75 mx-auto">
+          <span className="btn-icon "><i className="bi bi-twitter " /></span>
+          <span className="ms-3">Twitter</span>
+        </button>
+      </a>
+    )}
+    {links.ID === "email" && (
+      <a href={`mailto:${links.link}`}>
+        <button className="btn btn-outline-success  d-flex w-75 mx-auto">
+          <span className="btn-icon "><i className="bi bi-envelope " /></span>
+          <span className="ms-3">Email</span>
+        </button>
+      </a>
+    )}
+  </div>
+));
+
+
+
 const App = () => {
+  const [phoneNumber, setPhoneNumber] = useState('');
+
+  const handlePhoneButtonClick = () => {
+    setPhoneNumber(user.phone); // Cập nhật số điện thoại vào state
+  };
   return (
     <div className="container">
       <div className="row">
@@ -55,14 +107,19 @@ const App = () => {
           </div>
 
           <div className="social_media-box">
+
             <div className="social_media-bg mx-auto pt-2 pb-4 rounded-top border">
-              <button className="btn btn-outline-success m-2 d-flex w-75 mx-auto">
-                <span className="btn-icon "><i className="bi bi-envelope " /></span>
-                <span className="ms-3">Email</span>
-              </button>
+
               <button className="btn btn-outline-success m-2 d-flex w-75 mx-auto">
                 <i className="bi bi-phone " />
                 <span className="ms-3">Phone</span>
+              </button>
+              {phoneNumber && (
+                <p className="phone-number text-center">{phoneNumber}</p>
+              )}
+              {/* <button className="btn btn-outline-success m-2 d-flex w-75 mx-auto">
+                <span className="btn-icon "><i className="bi bi-envelope " /></span>
+                <span className="ms-3">Email</span>
               </button>
               <button className="btn btn-outline-success m-2 d-flex w-75 mx-auto">
                 <span className="btn-icon "><i className="bi bi-linkedin " /></span>
@@ -71,9 +128,8 @@ const App = () => {
               <button className="btn btn-outline-success m-2 d-flex w-75 mx-auto">
                 <span className="btn-icon "><i className="bi bi-facebook " /></span>
                 <span className="ms-3">Social Media</span>
-              </button>
-
-
+              </button> */}
+              {link_button}
             </div>
           </div>
         </div>
