@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import user1 from "./pages/user.json"
+import Cover_photo from './pages/components/Cover_photo';
 
 var ID = 0;
 var user = user1[ID];
@@ -72,64 +73,58 @@ const link_button = user.social_media.map((links) => (
 
 
 const App = () => {
-  const [phoneNumber, setPhoneNumber] = useState('');
-
-  const handlePhoneButtonClick = () => {
-    setPhoneNumber(user.phone); // Cập nhật số điện thoại vào state
-  };
   return (
-    <div className="container">
-      <div className="cover-photo"></div>
-      <div className="row-1">
-        <div className="d-flex">
-          <img
-            src="./img/71e42070-d8ef-488e-b916-276e56336e003.jpg"
-            alt="Avatar"
-            className="avatar rounded-circle "
-          />
-          <div className='container infor-box row '>
-            <div className="col">
-              <div className="name description text-center">
-                <h1>{user.name}</h1>
-                <p>
-                  {user.title}
-                  <br />
-                  {user.organization}
-                </p>
-              </div></div>
-            <div className="col ">
-
-              <button className="btn btn-download  btn-outline-info d-flex w-60 mx-auto">
-                <a href="./contact/test.vcf" download>
-                  <span className><i className="bi bi-arrow-down-up " />
-                    <span className="ms-3"> Thêm vào danh bạ</span>
-                  </span>
-                </a>
-              </button>
-            </div>
-          </div></div>
-
-        <div className="fast-icon mx-auto text-center fa-xs box mt-4">
-          {fast_icon}
-        </div>
-        <div className="social_media-box">
-
-          <div className="social_media-bg mx-auto pt-2 pb-4 rounded-top border">
-
-            <button className="btn btn-outline-success m-2 d-flex w-75 mx-auto">
-              <i className="bi bi-phone " />
-              <span className="ms-3">Phone</span>
+    <>
+      <div className="container-fluid">
+        <Cover_photo />
+      </div>
+      <div className="container">
+        <div className="row">
+          <div className="col-sm-3 avatar">
+            <div className="ava-1">
+              <img
+                src="./img/71e42070-d8ef-488e-b916-276e56336e003.jpg"
+                alt="Avatar"
+                className="rounded-circle"
+              /></div>
+          </div>
+          <div className="col description">
+            <h1>{user.name}</h1>
+            <p>
+              {user.title}
+              <br />
+              {user.organization}
+            </p>
+          </div>
+          
+          <div className="col vcf-file ">
+            <button className="btn btn-download  btn-outline-info w-60 mx-auto ">
+              <a href="./contact/test.vcf" download>
+                <span className><i className="bi bi-arrow-down-up " />
+                  <span className="ms-3"> Thêm vào danh bạ</span>
+                </span>
+              </a>
             </button>
-            {phoneNumber && (
-              <p className="phone-number text-center">{phoneNumber}</p>
-            )}
-
-            {link_button}
+          </div>
+        </div>
+        <div className="row-1">
+          <div className="fast-icon mx-auto text-center fa-xs box ">
+            {fast_icon}
+          </div>
+          <div className="social_media-box">
+            <div className="social_media-bg mx-auto pt-2 pb-4 rounded-top border mt-4">
+              <button className="btn btn-outline-success m-2 d-flex w-75 mx-auto ">
+                <a href='tel:{user.phone}'>
+                <i className="bi bi-phone " />
+                <span className="ms-3">Phone</span></a>
+              </button>
+             
+              {link_button}
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
+    </>
   );
 };
 
