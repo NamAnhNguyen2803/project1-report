@@ -15,6 +15,7 @@ body {
 img{
   width: 168px;
   height: 168px;
+  object-fit: cover;
 }
 .ava-1{
   position: relative;
@@ -169,4 +170,3 @@ a{
       margin-bottom: 4px;
     }
   }
-
